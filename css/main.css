@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Bungee;
+          src: url("Bungee/Bungee-regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Comfortaa;
+          src: url("Comfortaa/Comfortaa-Regular.ttf") format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Comfortaa;
+}
+
+.centered-container {
+  margin: 0 auto;
+  width: 725px;
+}
+
+.game-box {
+  background-color: #262626;
+  height: 100%;
+  padding-top: 25px;
+  position: fixed;
+  overflow: scroll;
+  text-align: center;
+  width: 100%;
+  z-index: 0;
+}
+
+h1 {
+  color: #3f0;
+  font-size: 32px;
+  font-family: Bungee;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+h2 {
+  text-shadow: 2px 2px 2px #000;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 50px;
+  height: 50px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+p {
+  font-size: 14px;
+  padding-left: 6px;
+  text-align: justify;
+}
+
+.header {
+  color: white;
+  float: left;
+  height: 145px;
+  margin-left: 1%;
+  width: 48%;
+}
+
+.card-box {
+  display: inline-block;
+  height: 150px;
+  margin: 8px;
+  width: 100px;
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.card-cover {
+  background-color: #666;
+  border: 0px solid #000;
+  border-radius: 3px;
+  color: #666;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.card-cover:hover {
+  box-shadow: 0px 0px 2px #fff;
+  border: 1px solid #000;
+}
+
+.hide {
+  display: none;
+}
+
+#win-screen {
+  background-color: rgba(100, 100, 100, 0.7);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+.win-box {
+  background-color: #333;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: #FFF;
+  margin: 20% auto;
+  padding: 25px;
+  text-align: center;
+  width: 600px;
+}
+
+button {
+  background-color: #DDD;
+  border: 0 solid;
+  border-radius: 5px;
+  box-shadow: 0 4px #000;
+  cursor: pointer;
+  margin: 10px auto;
+  padding: 5px;
+  width: 125px;
+}
+
+button:hover {
+  background-color: #FFF;
+}
+
+button:active {
+  box-shadow: 0 2px #000;
+  transform: translateY(2px);
+}
+
+button:focus {
+  outline: 0;
+}
+
+.footer {
+  color: #FFF;
+  margin: 50px 0 20px 0;
+}
+
+img {
+  width: 40px;
+  margin-bottom: 50px;
+}

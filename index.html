@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Memory Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+  <section class="game-box">
+    <div class="centered-container">
+      <h1>Memory Game</h1>
+      <div class="header">
+        <h2>Instructions</h2>
+        <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso, or Pairs, is a card game in which all of the cards are laid facedown on a surface and two cards are flipped face up over each turn. The object of the game is
+          to turn over pairs of matching cards.</p>
+      </div>
+      <div class="header">
+        <h2>Timer</h2>
+        <h3 id="timer">0</h3>
+        <button onclick="timer()" id="timer-button">Start</button>
+        <h6>Warning: Resets game progress</h6>
+      </div>
+      <div class="board">
+        <div class="row">
+          <div class="card-box">
+            <div class="card" id="0">
+              <div class="card-cover" id="c0" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="1">
+              <div class="card-cover" id="c1" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="2">
+              <div class="card-cover" id="c2" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="3">
+              <div class="card-cover" id="c3" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="4">
+              <div class="card-cover" id="c4" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="5">
+              <div class="card-cover" id="c5" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card-box">
+            <div class="card" id="6">
+              <div class="card-cover" id="c6" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="7">
+              <div class="card-cover" id="c7" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="8">
+              <div class="card-cover" id="c8" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="9">
+              <div class="card-cover" id="c9" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="10">
+              <div class="card-cover" id="c10" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="11">
+              <div class="card-cover" id="c11" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card-box">
+            <div class="card" id="12">
+              <div class="card-cover" id="c12" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="13">
+              <div class="card-cover" id="c13" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="14">
+              <div class="card-cover" id="c14" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="15">
+              <div class="card-cover" id="c15" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="16">
+              <div class="card-cover" id="c16" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card" id="17">
+              <div class="card-cover" id="c17" onclick="cardNumber(this)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <h6 class="footer">Coded by Andy Flickinger</h6>
+      <img src="gray-logo.png" alt="AF Logo" name="Andy Flickinger Logo">
+  </section>
+  <section id="win-screen">
+    <div class="win-box">
+      <h1>Complete!</h1>
+      <h2>Your time was <span id="completion-time"></span></h2>
+      <button onclick="reset();tryAgain();">Try again!</button>
+    </div>
+  </section>
+
+</body>
+
+</html>
